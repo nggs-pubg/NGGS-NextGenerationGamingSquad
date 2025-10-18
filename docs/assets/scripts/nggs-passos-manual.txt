@@ -1,0 +1,30 @@
+NGGS - Execução manual dos comandos CMD
+=======================================
+
+1. Abra o Prompt de Comando **como Administrador**.
+2. Execute cada comando na ordem abaixo. Aguarde a finalização antes do próximo passo.
+
+Limpeza de temporários
+----------------------
+```
+del /q /f /s "%TEMP%\*"
+del /q /f /s "C:\Windows\Temp\*"
+```
+
+Otimização de rede
+------------------
+```
+ipconfig /flushdns
+ipconfig /release
+ipconfig /renew
+netsh int ip reset
+netsh winsock reset
+```
+
+Plano de energia
+----------------
+```
+powercfg /setactive SCHEME_MIN
+```
+
+> Reinicie o computador após a execução de todos os comandos.

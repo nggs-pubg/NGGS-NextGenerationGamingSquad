@@ -1,0 +1,58 @@
+site_name: NGGS
+site_description: "Guias legítimos da NGGS para otimização de PC, periféricos e PUBG."
+site_url: https://nggs.gg
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - toc.integrate
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: black
+      accent: indigo
+  font:
+    text: "Montserrat"
+    code: "Fira Code"
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/SZF2H5w7ZG
+      name: "Comunidade no Discord"
+extra_css:
+  - assets/css/custom.css
+extra_javascript:
+  - assets/js/custom.js
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+nav:
+  - Início: index.md
+  - Comunidade:
+      - Discord: comunidade/discord.md
+  - Configurar PC:
+      - Checklist: pc/checklist.md
+      - Windows: pc/windows.md
+      - Armazenamento: pc/storage.md
+      - Rede: pc/rede.md
+      - Otimizador CMD: pc/comandos-cmd.md
+  - GPU:
+      - NVIDIA: gpu/nvidia.md
+      - AMD: gpu/amd.md
+  - Mouse:
+      - Fundamentos: mouse/fundamentos.md
+      - Calculadora: mouse/calculadora.md
+      - Testes: mouse/teste.md
+  - PUBG:
+      - Guia Geral: pubg/guia-geral.md
+      - Anexos: pubg/anexos.md
+      - Armas:
+          - Modelo: pubg/armas/_template-arma.md
+  - Sobre: sobre.md

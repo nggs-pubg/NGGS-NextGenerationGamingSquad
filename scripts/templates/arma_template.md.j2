@@ -1,0 +1,21 @@
+# {{ nome }}
+
+- **Tipo:** {{ tipo }}
+- **Função na squad:** {{ funcao or "Defina o papel da arma na composição" }}
+
+## Configuração recomendada
+
+| Slot | Anexo | Observações |
+|------|-------|-------------|
+| Cano | {{ cano or "Compensador / Supressor" }} | |
+| Empunhadura | {{ empunhadura or "Vertical / Leve" }} | |
+| Munição | {{ municao or "5.56 / 7.62 / 9mm" }} | |
+| Ótica | {{ otica or "Holo / Scope 3x / Scope 4x" }} | |
+
+## Observações táticas
+- **Descrição:** {{ descricao or "Explique cenário ideal, sinergias e limitações." }}
+- **Por que fazer:** {{ motivo or "Benefícios estratégicos do kit definido." }}
+- **Como reverter:** {{ reverter or "Indique ajustes caso a partida exija outra abordagem." }}
+- **Impacto esperado:** {{ impacto or "Resultados práticos ao aplicar as recomendações." }}
+
+> Documento gerado automaticamente pela CLI NGGS.

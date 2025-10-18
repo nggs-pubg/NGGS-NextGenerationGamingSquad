@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nggs"
+version = "0.1.0"
+description = "Ferramentas NGGS para automação de conteúdo MkDocs."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.9,<1.0",
+    "jinja2>=3.1,<4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mkdocs>=1.6,<2.0",
+    "mkdocs-material>=9.5,<10.0",
+    "pymdown-extensions>=10.8,<11.0",
+    "pytest>=8.2,<9.0",
+    "black>=24.3,<25.0",
+    "isort>=5.13,<6.0",
+    "ruff>=0.4,<0.6",
+    "mypy>=1.8,<2.0",
+]
+
+[project.scripts]
+nggs = "scripts.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["scripts*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["scripts"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "UP"]
+ignore = ["E203"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+pretty = true
+color_output = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+ignore_missing_imports = true
