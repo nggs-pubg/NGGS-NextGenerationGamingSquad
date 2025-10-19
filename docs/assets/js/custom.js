@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const initDpiTool = () => {
   const dpiTool = document.querySelector("[data-dpi-tool]");
   if (!dpiTool) return;
 
@@ -63,4 +63,142 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   defaultsBtn?.click();
+};
+
+const initVideoCarousels = () => {
+  const carousels = document.querySelectorAll("[data-carousel]");
+  if (!carousels.length) return;
+
+  const videoFrames = new Set();
+  const YT_ORIGIN = "https://www.youtube.com";
+
+  const sendPlayerCommand = (iframe, command) => {
+    if (!iframe?.contentWindow) return;
+
+    iframe.contentWindow.postMessage(
+      JSON.stringify({
+        event: "command",
+        func: command,
+        args: [],
+      }),
+      YT_ORIGIN
+    );
+  };
+
+  const pauseOthers = (current) => {
+    videoFrames.forEach((frame) => {
+      if (frame !== current) {
+        sendPlayerCommand(frame, "pauseVideo");
+      }
+    });
+  };
+
+  const setupVideoCard = (card) => {
+    const iframe = card.querySelector("[data-video-iframe]");
+    if (!iframe) return;
+
+    videoFrames.add(iframe);
+
+    const play = () => {
+      pauseOthers(iframe);
+      sendPlayerCommand(iframe, "playVideo");
+    };
+
+    const pause = () => {
+      sendPlayerCommand(iframe, "pauseVideo");
+    };
+
+    card.addEventListener("pointerenter", play);
+    card.addEventListener("pointerleave", pause);
+    card.addEventListener("focusin", play);
+    card.addEventListener("focusout", pause);
+    card.addEventListener(
+      "touchstart",
+      () => {
+        play();
+      },
+      { passive: true }
+    );
+  };
+
+  const pauseAll = () => {
+    videoFrames.forEach((frame) => sendPlayerCommand(frame, "pauseVideo"));
+  };
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState !== "visible") {
+      pauseAll();
+    }
+  });
+
+  carousels.forEach((carousel) => {
+    const viewport = carousel.querySelector("[data-carousel-viewport]");
+    const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
+    if (!viewport || !slides.length) return;
+
+    const prevBtn = carousel.querySelector("[data-carousel-prev]");
+    const nextBtn = carousel.querySelector("[data-carousel-next]");
+
+    let step = 0;
+
+    const recalcStep = () => {
+      if (slides.length < 2) {
+        step = viewport.clientWidth;
+        return;
+      }
+
+      const delta = slides[1].offsetLeft - slides[0].offsetLeft;
+      step = delta > 0 ? delta : viewport.clientWidth;
+    };
+
+    const updateControls = () => {
+      const maxScroll = Math.max(viewport.scrollWidth - viewport.clientWidth, 0);
+
+      if (prevBtn) {
+        prevBtn.disabled = viewport.scrollLeft <= 0;
+      }
+
+      if (nextBtn) {
+        nextBtn.disabled = maxScroll === 0 || viewport.scrollLeft >= maxScroll - 1;
+      }
+    };
+
+    const scrollByStep = (direction) => {
+      if (!step) recalcStep();
+
+      const maxScroll = Math.max(viewport.scrollWidth - viewport.clientWidth, 0);
+      const target = Math.min(
+        Math.max(viewport.scrollLeft + direction * step, 0),
+        maxScroll
+      );
+
+      viewport.scrollTo({ left: target, behavior: "smooth" });
+    };
+
+    prevBtn?.addEventListener("click", () => {
+      scrollByStep(-1);
+    });
+
+    nextBtn?.addEventListener("click", () => {
+      scrollByStep(1);
+    });
+
+    const handleScroll = () => window.requestAnimationFrame(updateControls);
+    viewport.addEventListener("scroll", handleScroll, { passive: true });
+
+    window.addEventListener("resize", () => {
+      recalcStep();
+      updateControls();
+    });
+
+    recalcStep();
+    updateControls();
+
+    slides.forEach((slide) => setupVideoCard(slide));
+  });
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  initDpiTool();
+  initVideoCarousels();
 });

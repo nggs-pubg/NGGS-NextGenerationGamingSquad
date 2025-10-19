@@ -11,20 +11,57 @@
       <a class="md-button md-button--primary" href="comunidade/discord/">Entrar na comunidade</a>
       <a class="md-button md-button--ghost" href="#mapa-de-conteudo">Mapa de conteúdo</a>
     </div>
-    <dl class="nggs-hero__stats">
-      <div>
-        <dt>FPS Estável</dt>
-        <dd>+45</dd>
+  </div>
+  <div class="nggs-hero__media" data-carousel>
+    <div class="nggs-hero__media-header">
+      <span class="nggs-section__eyebrow">NGGS em ação</span>
+      <div class="nggs-carousel__controls">
+        <button type="button" class="nggs-carousel__control" data-carousel-prev aria-label="Vídeo anterior">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <button type="button" class="nggs-carousel__control" data-carousel-next aria-label="Próximo vídeo">
+          <span aria-hidden="true">›</span>
+        </button>
       </div>
-      <div>
-        <dt>Coaches NGGS</dt>
-        <dd>12</dd>
-      </div>
-      <div>
-        <dt>Guias curados</dt>
-        <dd>30+</dd>
-      </div>
-    </dl>
+    </div>
+    <div class="nggs-carousel__viewport" data-carousel-viewport>
+      <article class="nggs-carousel__slide" data-carousel-slide data-video-card data-video-id="gA1raXafp3Y">
+        <div class="nggs-video-card__frame">
+          <iframe
+            data-video-iframe
+            src="https://www.youtube.com/embed/gA1raXafp3Y?enablejsapi=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+            title="Setup NGGS para FPS estável"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p>Como estabilizar o FPS sem sair das diretrizes oficiais.</p>
+      </article>
+      <article class="nggs-carousel__slide" data-carousel-slide data-video-card data-video-id="6QaM18OVmlM">
+        <div class="nggs-video-card__frame">
+          <iframe
+            data-video-iframe
+            src="https://www.youtube.com/embed/6QaM18OVmlM?enablejsapi=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+            title="Mods NGGS e ajustes táticos"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p>Conheça os mods NGGS e como executá-los com responsabilidade.</p>
+      </article>
+      <article class="nggs-carousel__slide" data-carousel-slide data-video-card data-video-id="JtTVcViylV8">
+        <div class="nggs-video-card__frame">
+          <iframe
+            data-video-iframe
+            src="https://www.youtube.com/embed/JtTVcViylV8?enablejsapi=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+            title="Guias curados NGGS"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p>Curadoria de guias oficiais NGGS para evoluir na ranqueada.</p>
+      </article>
+    </div>
   </div>
   <div class="nggs-hero__badge">
     <img src="assets/images/logo-3.png" alt="Marca NGGS em neon" />
