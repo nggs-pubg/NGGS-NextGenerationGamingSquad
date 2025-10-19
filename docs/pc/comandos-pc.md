@@ -1,11 +1,13 @@
-# Otimizador NGGS (comandos CMD)
+# Comandos PC
 
-- Download automático: [`nggs-otimizador.bat`](../assets/scripts/nggs-otimizador.bat) — execute como administrador.  
+## Otimizador NGGS (comandos CMD)
+
+- Download automático: [`nggs-otimizador.bat`](../assets/scripts/nggs-otimizador.bat) — execute como administrador.
 - Execução manual passo a passo: [`nggs-passos-manual.txt`](../assets/scripts/nggs-passos-manual.txt)
 
 > **Aviso:** use apenas em sessões locais no Windows com privilégios de administrador. O script segue recomendações oficiais e não altera registros críticos.
 
-## O que o script faz
+### O que o script faz
 
 | Etapa | Descrição | Por que fazer | Como reverter | Impacto esperado |
 | --- | --- | --- | --- | --- |
@@ -16,18 +18,21 @@
 ## Como usar
 
 ### Opção A — Arquivo `.bat`
-1. Baixe o arquivo `nggs-otimizador.bat`.  
-2. Clique com o botão direito e escolha **Executar como administrador**.  
+
+1. Baixe o arquivo `nggs-otimizador.bat`.
+2. Clique com o botão direito e escolha **Executar como administrador**.
 3. Aguarde a conclusão e reinicie o PC.
 
 ### Opção B — Comandos manuais
-1. Abra o Prompt de Comando como administrador.  
-2. Execute os comandos na ordem indicada no arquivo `nggs-passos-manual.txt`.  
+
+1. Abra o Prompt de Comando como administrador.
+2. Execute os comandos na ordem indicada no arquivo `nggs-passos-manual.txt` ou utilize a referência abaixo.
 3. Reinicie o PC ao finalizar.
 
 ### Recomendações
-- Utilize o procedimento no máximo 1 vez por semana ou quando notar instabilidade.  
-- Combine com o [checklist geral](checklist.md) para garantir que drivers e updates estão em dia.  
+
+- Utilize o procedimento no máximo 1 vez por semana ou quando notar instabilidade.
+- Combine com o [checklist geral](checklist.md) para garantir que drivers e updates estão em dia.
 - Não edite os comandos sem validação prévia do staff técnico.
 
 ## Conteúdo do arquivo `.bat`
@@ -77,3 +82,40 @@ echo Pressione qualquer tecla para fechar...
 pause >nul
 endlocal
 ```
+
+## Referência completa de comandos
+
+### Prompt de Comando (CMD)
+
+```cmd
+bcdedit /set useplatformtick yes
+bcdedit /set disabledynamictick yes
+bcdedit /deletevalue useplatformclock false
+bcdedit /set nx AlwaysOff
+bcdedit /set tscsyncpolicy Enhanced FPS
+bcdedit /set tscsyncpolicy Legacy input
+```
+
+### PowerShell
+
+```powershell
+reg add "HKCU\System\GameConfigStore" /v GameDVR_Enabled /t REG_DWORD /d 0 /f
+reg add "HKCU\Software\Microsoft\GameBar" /v AllowAutoGameMode /t REG_DWORD /d 0 /f
+reg add "HKCU\Software\Microsoft\GameBar" /v AutoGameModeEnabled /t REG_DWORD /d 0 /f
+```
+
+### Editor de Registro (Regedit)
+
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers`
+  - Criar chave `Scheduler`
+  - Definir `EnablePreemption` como `0`
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR`
+  - Definir valor como `0`
+- `HKEY_CURRENT_USER\Control Panel\Accessibility\MouseKeys`
+  - Definir `Flags` como `0`
+- `HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys`
+  - Definir `Flags` como `0`
+- `HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response`
+  - Definir `Flags` como `0`
+- `HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys`
+  - Definir `Flags` como `0`
