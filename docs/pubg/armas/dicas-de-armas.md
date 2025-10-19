@@ -4,7 +4,6 @@ Organizamos as armas sugeridas em uma trilha que vai do primeiro contato até o 
 
 ---
 
-#laranja
 ## SMG (.9mm)
 
 ### Para quem está começando
@@ -21,7 +20,6 @@ Organizamos as armas sugeridas em uma trilha que vai do primeiro contato até o 
 
 ---
 
-#verde
 ## AR (.556mm)
 
 ### Para quem está começando
@@ -36,7 +34,6 @@ Organizamos as armas sugeridas em uma trilha que vai do primeiro contato até o 
 
 ---
 
-#ciano
 ## DMR (.556mm)
 
 ### Para quem está começando
@@ -50,7 +47,7 @@ Organizamos as armas sugeridas em uma trilha que vai do primeiro contato até o 
 
 ---
 
-#marronAR
+
 ## AR (.762mm)
 
 ### Para quem está começando
@@ -65,7 +62,7 @@ Organizamos as armas sugeridas em uma trilha que vai do primeiro contato até o 
 
 ---
 
-#roxo
+
 ## DMR (.762mm)
 
 ### Para quem está começando
@@ -84,5 +81,6 @@ Organizamos as armas sugeridas em uma trilha que vai do primeiro contato até o 
 - **SMG** — metralhadoras leves, pensadas para combates a curta distância com alta cadência.
 - **AR** — rifles de assalto versáteis que brilham no médio alcance.
 - **DMR** — rifles semiautomáticos de atirador designado, ideais para média/longa distância com follow-up rápido.
+- **SR** - rifles Sniper.
 
 Escolha a arma que combina com sua vibe, ajuste acessórios conforme o conforto e compartilhe seus achados com a galera da NGGS!

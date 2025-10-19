@@ -7,7 +7,7 @@ Siga o passo a passo abaixo sempre que precisar validar e compilar o projeto ap√
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate 
 pip install --upgrade pip
 pip install -r requirements.txt
 pip install -e .
