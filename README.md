@@ -1,79 +1,21 @@
-# NGGS — Site e Utilitários
+# NGGS Play Hub
 
-Repositório oficial da NGGS para documentação técnica baseada em MkDocs e automações em Python. O foco é ajudar jogadores de PUBG (e FPS em geral) a otimizar hardware, software e rotina de treino mantendo **fair play absoluto**.
+Somos uma equipe de amigos e jogadores FPS, survival e battle royale que ama transformar setups desajustados em experiências suaves e diversão sem stress. Do lobby casual com os amigos ao drop solo de fim de semana, reunimos ajustes rápidos, guias passo a passo e suporte técnico camarada para você jogar do seu jeito.
 
-## Estrutura
+## O que você encontra aqui
+- **Guides descomplicados**: otimizações de Windows, GPU e periféricos com linguagem direta, sem jargão hardcore.
+- **Dicas de gameplay descontraídas**: rotinas leves de aquecimento, rotas de loot e ideias para squads se entenderem sem virar treino de liga.
+- **Suporte amigo**: nossa equipe está no Discord para revisar clipes, sugerir configs e acompanhar sua evolução sem pressão.
+- **Conteúdo sempre reversível**: toda dica vem com planos de reversão. Testou, não curtiu? Volta um passo e tenta outra.
 
-```
-nggs/
-├─ docs/                   # Conteúdo em Markdown consumido pelo MkDocs
-├─ scripts/                # CLI e geradores em Python (Typer + Jinja2)
-├─ tests/                  # Testes automatizados (pytest)
-├─ mkdocs.yml              # Configuração do site (tema, navegação)
-├─ pyproject.toml          # Lint, formatação, dependências
-├─ requirements.txt        # Dependências mínimas para CI/CLI
-└─ .github/workflows/      # Pipeline de CI/CD
-```
+## Por que confiar na NGGS
+- Jogamos limpo e seguimos as regras oficiais dos jogos e fabricantes. Nada de gambiarras, só ajustes aprovados.
+- Testamos cada passo em máquinas reais, de builds modestos a setups parrudos.
+- Mantemos a comunidade próxima: feedback constante, pedidos de guias novos e atualizações rápidas quando algo muda no meta.
 
-## Requisitos
+## Participe
+- Visite o site para explorar os guias e ferramentas.
+- Junte-se ao Discord para tirar dúvidas, compartilhar clipes e organizar squads casuais.
+- Acompanhe nossos drops de conteúdo em vídeo no carrossel da página inicial para ver as novidades em ação.
 
-- Python 3.10 ou superior
-- Pip, venv (ou Poetry/pipx se preferir)
-
-Instalação local:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install --upgrade pip
-pip install -r requirements.txt
-pip install -e .
-```
-
-## CLI (`nggs`)
-
-A CLI usa [Typer](https://typer.tiangolo.com/) e fica disponível após `pip install -e .`.
-
-### Gerar páginas de armas
-
-```bash
-nggs gen weapon --nome "Beryl M762" --tipo AR --saida docs/pubg/armas/
-```
-
-Parâmetros opcionais: `--funcao`, `--cano`, `--empunhadura`, `--municao`, `--otica`.
-
-### Atualizar calculadora de eDPI
-
-```bash
-nggs calc edpi --dpi 800 --sens 1.2 --saida docs/mouse/calculadora.md
-```
-
-Use `--yaw` para jogos com valor diferente do PUBG (padrão `0.0025`). A CLI cria backup `.bak` antes de sobrescrever o arquivo.
-
-## Desenvolvimento
-
-- `ruff --output-format=github .`
-- `black .`
-- `isort .`
-- `pytest`
-- `mkdocs serve`
-
-O pipeline de CI executa todas as etapas acima e publica em GitHub Pages (`main`).
-
-## Política anti-cheat
-
-A NGGS não apoia, distribui ou aceita: no-recoil scripts, macros, bots, automações ou modificações ilegais. Trabalhamos apenas com fontes oficiais (Microsoft, NVIDIA, AMD, Krafton) e focamos em melhorias legítimas de hardware e habilidade.
-
-Leia também `docs/sobre.md` para detalhes de contribuição e referências oficiais.
-
-## Contribuição
-
-1. Abra uma issue descrevendo a melhoria.
-2. Crie branch a partir de `main`.
-3. Utilize a CLI para gerar conteúdo sempre que possível.
-4. Execute lint, testes e `mkdocs build --strict` antes do pull request.
-5. Mantenha o padrão **Descrição / Por que fazer / Como reverter / Impacto esperado** em novas dicas técnicas.
-
-## Licença
-
-Distribuído sob licença MIT — ver arquivo `LICENSE` (adicione a licença quando definido pela organização).
+Pronto para jogar leve, com FPS estável e companhia bacana? Chega mais e bora otimizar sem perder o bom humor. GG! 🎮

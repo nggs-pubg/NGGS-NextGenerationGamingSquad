@@ -1,11 +1,11 @@
 <div class="nggs-hero">
   <div class="nggs-hero__overlay"></div>
   <div class="nggs-hero__content">
-    <p class="nggs-hero__eyebrow">NGGS PERFORMANCE HUB</p>
-    <h1>Treine, otimize e jogue com ética.</h1>
+    <p class="nggs-hero__eyebrow">NGGS PLAY HUB</p>
+    <h1>Jogue leve, com setup afinado.</h1>
     <p>
-      Guias oficiais da comunidade NGGS para extrair o máximo do seu setup de FPS sem abandonar o fair play.
-      Ajustes consistentes para Windows, GPU, mouse e táticas reais de PUBG.
+      Somos um squad de jogadores casuais que ama compartilhar ajustes simples para deixar o seu PC estável e o jogo mais divertido.
+      Venha otimizar Windows, GPU e sensibilidade com orientações descomplicadas e sem papo de tryhard.
     </p>
     <div class="nggs-hero__cta">
       <a class="md-button md-button--primary" href="comunidade/discord/">Entrar na comunidade</a>
@@ -35,7 +35,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p>Como estabilizar o FPS sem sair das diretrizes oficiais.</p>
+        <p>Aprenda a deixar o FPS firme com ajustes rápidos, sem gambiarras ou trapaça.</p>
       </article>
       <article class="nggs-carousel__slide" data-carousel-slide data-video-card data-video-id="6QaM18OVmlM">
         <div class="nggs-video-card__frame">
@@ -47,7 +47,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p>Conheça os mods NGGS e como executá-los com responsabilidade.</p>
+        <p>Conheça mods e configs aprovadas para deixar a jogatina redonda com zero stress.</p>
       </article>
       <article class="nggs-carousel__slide" data-carousel-slide data-video-card data-video-id="JtTVcViylV8">
         <div class="nggs-video-card__frame">
@@ -59,7 +59,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p>Curadoria de guias oficiais NGGS para evoluir na ranqueada.</p>
+        <p>Rotinas leves para curtir PUBG entre amigos com performance estável e zero estresse.</p>
       </article>
     </div>
   </div>
@@ -70,33 +70,33 @@
 
 <section class="nggs-section" id="mapa-de-conteudo">
   <header class="nggs-section__header">
-    <span class="nggs-section__eyebrow">Mapa tático</span>
-    <h2>Foque no que importa antes do drop.</h2>
-    <p>Escolha por onde começar e siga as checklists com segurança: cada dica contempla reversão e impacto esperado.</p>
+    <span class="nggs-section__eyebrow">Mapa fácil</span>
+    <h2>Escolha o próximo ajuste sem dor de cabeça.</h2>
+    <p>Parta das checklists, siga os passos com segurança e saiba como desfazer tudo se não curtir o resultado.</p>
   </header>
   <div class="nggs-grid nggs-grid--features">
     <article class="nggs-card">
       <img src="assets/images/logo-1.png" alt="NGGS escudo" />
       <h3>Preparar o PC</h3>
-      <p>Checklist de estabilidade, Windows afinado, armazenamento saudável e rede pronta para scrims.</p>
+      <p>Checklist para deixar o PC redondo, Windows limpo, espaço livre e conexão sem travadinhas.</p>
       <a href="pc/checklist/" class="nggs-card__link">Ver checklist</a>
     </article>
     <article class="nggs-card">
       <img src="assets/images/logo-4.png" alt="NGGS flames" />
       <h3>GPU sem surpresas</h3>
-      <p>Perfis NVIDIA e AMD com foco em FPS consistente, sempre dentro das recomendações das fabricantes.</p>
+      <p>Perfis NVIDIA e AMD para mais FPS sem exagero. Tudo dentro das recomendações oficiais.</p>
       <a href="gpu/nvidia/" class="nggs-card__link">Abrir guias</a>
     </article>
     <article class="nggs-card">
       <img src="assets/images/logo-2.png" alt="Mascote NGGS" />
       <h3>Precisão de mouse</h3>
-      <p>Fundamentos, testes práticos e nossa calculadora de eDPI + distância 360° integrada à CLI.</p>
+      <p>Fundamentos, testes rápidos e nossa calculadora de eDPI para sentir o mouse do seu jeito.</p>
       <a href="mouse/calculadora/" class="nggs-card__link">Calcular agora</a>
     </article>
     <article class="nggs-card">
       <img src="assets/images/logo-5.png" alt="NGGS tactical emblem" />
       <h3>PUBG playbook</h3>
-      <p>Rotas táticas, anexos, modelo de arma e diretrizes de comunicação para squads NGGS.</p>
+      <p>Dicas de loot, anexos e ideias de rotação para brincar em equipe sem virar treino profissional.</p>
       <a href="pubg/guia-geral/" class="nggs-card__link">Montar estratégia</a>
     </article>
   </div>
@@ -106,17 +106,17 @@
   <div class="nggs-split">
     <div>
       <span class="nggs-section__eyebrow">Suporte NGGS</span>
-      <h2>Conte com a nossa equipe para evoluir no PUBG.</h2>
+      <h2>Conte com a nossa equipe para curtir PUBG sem dor de cabeça.</h2>
       <p>
-        Precisa de ajuda para otimizar o PC, configurar periféricos ou entender o meta atual? Nosso time está disponível
-        para orientações em áudio, análises de partidas e ajustes personalizados.
+        Se o FPS caiu, o som bugou ou a mira não encaixa, chama a gente no Discord. Ajudamos a ajustar drivers, periféricos e
+        até revisar vídeos de gameplay para apontar caminhos simples para melhorar.
       </p>
       <div class="nggs-support">
         <p><strong>Como funciona?</strong></p>
         <ul>
-          <li>Solicite atendimento pelo Discord e informe seu objetivo (FPS, aim, tática).</li>
-          <li>Receba um plano de ação com ajustes recomendados e como revertê-los quando necessário.</li>
-          <li>Agende sessões adicionais para feedback contínuo até alcançar seu desempenho ideal.</li>
+          <li>Chame nosso time pelo Discord e conte qual problema está travando suas partidas.</li>
+          <li>Receba um plano de ajustes com passo a passo claro e opções de reversão se não gostar.</li>
+          <li>Quando quiser, marque outra sessão para tirar dúvidas, revisar clipes ou experimentar configs novas.</li>
         </ul>
         <a class="md-button md-button--primary" href="comunidade/discord/">Quero orientação agora</a>
       </div>
@@ -124,8 +124,8 @@
     <div class="nggs-showcase">
       <img src="assets/images/logo-4.png" alt="Símbolo NGGS azul flamejante" />
       <p>
-        Nosso suporte personalizado mantém o foco em configurações legítimas e respeito às regras. Você recebe dicas
-        práticas, checkpoints de reversão e acompanhamento direto dos coaches NGGS.
+        Nosso suporte é direto ao ponto: configuração legítima, reversão documentada e muita paciência para explicar cada etapa.
+        Você recebe dicas práticas, checkpoints de reversão e acompanhamento amigo da galera NGGS.
       </p>
     </div>
   </div>
@@ -133,24 +133,25 @@
 
 <section class="nggs-section">
   <header class="nggs-section__header">
-    <span class="nggs-section__eyebrow">Fair play acima de tudo</span>
-    <h2>NGGS é sinônimo de integridade competitiva.</h2>
+    <span class="nggs-section__eyebrow">Respeito às regras</span>
+    <h2>Jogamos limpo porque é mais divertido assim.</h2>
     <p>
-      Reforçamos práticas legítimas em todos os guias. Nenhum ajuste aqui compromete os termos de uso de PUBG, Microsoft, AMD ou NVIDIA.
+      Tudo o que indicamos segue os termos de uso de PUBG, Microsoft, AMD e NVIDIA. Nada de atalhos duvidosos: preferimos
+      jogatinas honestas, risada no lobby e evolução constante.
     </p>
   </header>
   <div class="nggs-grid nggs-grid--pillars">
     <article>
       <h3>Zero cheat</h3>
-      <p>Sem no-recoil, macros ou automações. Se encontrar algo suspeito, remova e reporte ao staff imediatamente.</p>
+      <p>Sem no-recoil, macros ou automações. Curta o progresso real, reporte qualquer coisa suspeita e mantenha o servidor saudável.</p>
     </article>
     <article>
       <h3>Documentação reversível</h3>
-      <p>Cada etapa explica como desfazer o ajuste. Segurança total para treinar, competir e fazer troubleshooting.</p>
+      <p>Cada etapa mostra como desfazer o ajuste. Segurança total para experimentar, aprender e voltar atrás se não curtir.</p>
     </article>
     <article>
       <h3>Referências oficiais</h3>
-      <p>Fontes da Microsoft, NVIDIA, AMD, Intel, Krafton e provedores confiáveis. Nada de gambiarras.</p>
+      <p>Fontes da Microsoft, NVIDIA, AMD, Intel, Krafton e parceiros confiáveis. Nada de gambiarras, só soluções aprovadas.</p>
     </article>
   </div>
 </section>

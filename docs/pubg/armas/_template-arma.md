@@ -1,21 +1,19 @@
 # {{ nome_da_arma | default("Nome da Arma") }}
 
 - **Tipo:** {{ tipo | default("Defina o tipo (AR, DMR, SMG, SR)") }}
-- **Função na squad:** {{ funcao | default("Ex.: entrada, suporte, âncora") }}
+- **Função no squad:** {{ funcao | default("Ex.: avanço, suporte utilitário, cobertura") }}
 
 ## Configuração recomendada
 
 | Slot | Anexo | Observações |
 |------|-------|-------------|
 | Cano | {{ cano | default("Compensador / Supressor") }} | |
-| Empunhadura | {{ empunhadura | default("Vertical / Leve") }} | |
+| Empunhadura | {{ empunhadura | default("Vertical / Leve / Thumb") }} | |
 | Munição | {{ municao | default("5.56 / 7.62 / 9mm") }} | |
 | Ótica | {{ otica | default("Holo / Scope 3x / Scope 4x") }} | |
 
 ## Observações táticas
-- **Descrição:** {{ descricao | default("Explique quando usar, range ideal e combinações de armas.") }}
-- **Por que fazer:** {{ motivo | default("Qual benefício estratégico?") }}
-- **Como reverter:** {{ reverter | default("O que mudar se o plano não funcionar.") }}
-- **Impacto esperado:** {{ impacto | default("Resultados esperados nas partidas.") }}
-
-> Gere arquivos baseados neste template via CLI: `nggs gen weapon`.
+- **Descrição:** {{ descricao | default("Conte quando usar, alcance preferido e com que outras armas combina.") }}
+- **Por que fazer:** {{ motivo | default("Qual a vantagem para o squad?") }}
+- **Como reverter:** {{ reverter | default("O que trocar se a ideia não encaixar.") }}
+- **Impacto esperado:** {{ impacto | default("O que muda na jogatina.") }}

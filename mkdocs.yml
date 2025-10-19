@@ -54,5 +54,6 @@ nav:
       - Guia Geral: pubg/guia-geral.md
       - Anexos: pubg/anexos.md
       - Armas:
+          - Dicas: pubg/armas/dicas-de-armas.md
           - Modelo: pubg/armas/_template-arma.md
   - Sobre: sobre.md

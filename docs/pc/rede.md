@@ -1,25 +1,25 @@
-# Rede — Latência Estável para Lobbies Cheios
+# Rede — Ping tranquilo para jogar com os amigos
 
-## Usar conexão cabeada
-- **Descrição:** sempre priorize cabo Ethernet CAT5e ou superior.  
-- **Por que fazer:** reduz interferências e jitter presentes em Wi-Fi.  
-- **Como reverter:** caso precise voltar ao Wi-Fi, escolha a banda de 5 GHz e mantenha linha de visão com o roteador.  
-- **Impacto esperado:** ping mais consistente em rotas críticas.
+## Prefira o bom e velho cabo
+- **Descrição:** use cabo Ethernet (CAT5e ou superior) sempre que possível.  
+- **Por que fazer:** o Wi-Fi é prático, mas o cabo evita interferências e flutuações de ping.  
+- **Como reverter:** se precisar voltar ao Wi-Fi, conecte na rede de 5 GHz e mantenha o roteador por perto, sem obstáculos.  
+- **Impacto esperado:** conexão mais estável para cair nos mapas sem medo de lag.
 
-## Atualizar drivers de rede
-- **Descrição:** utilize o site da fabricante (Intel, Realtek, Killer) ou o Windows Update para instalar drivers recentes.  
-- **Por que fazer:** corrige bugs de desconexão e melhora gerenciamento de energia da placa de rede.  
-- **Como reverter:** acesse `Gerenciador de Dispositivos > Adaptadores de rede > Propriedades > Driver > Reverter` se notar instabilidade.  
-- **Impacto esperado:** quedas de pacote minimizadas.
+## Mantenha os drivers de rede atualizados
+- **Descrição:** baixe versões recentes direto da fabricante (Intel, Realtek, Killer) ou pelo Windows Update.  
+- **Por que fazer:** atualizações resolvem quedas aleatórias e melhoram o consumo de energia da placa.  
+- **Como reverter:** `Gerenciador de Dispositivos > Adaptadores de rede > Propriedades > Driver > Reverter`.  
+- **Impacto esperado:** menos perda de pacotes e reconexões durante a call no Discord.
 
-## Ajustar configuração de energia
-- **Descrição:** em `Gerenciador de Dispositivos`, desative a opção **Permitir que o computador desligue este dispositivo para economizar energia** na aba **Gerenciamento de Energia**.  
-- **Por que fazer:** evita que o Windows suspenda a interface durante longas filas.  
-- **Como reverter:** reative a caixa caso deseje economizar energia em uso diário.  
-- **Impacto esperado:** conexões persistentes em scrims extensas.
+## Ajuste o modo de energia da placa
+- **Descrição:** no `Gerenciador de Dispositivos`, abra seu adaptador de rede e desmarque **Permitir que o computador desligue este dispositivo para economizar energia**.  
+- **Por que fazer:** impede que o Windows “cochile” com a conexão em sessões longas.  
+- **Como reverter:** marque novamente a caixa se estiver longe do PC e quiser economizar uns watts.  
+- **Impacto esperado:** conexão firme durante noites inteiras de jogatina.
 
-## Testar estabilidade
+## Faça um teste rápido antes do drop
 - **Descrição:** rode `ping -n 50 8.8.8.8` (Windows) ou `ping -c 50 8.8.8.8` (Linux/macOS).  
-- **Por que fazer:** monitora perda de pacotes e variação do ping antes de treinos.  
-- **Como reverter:** comando não modifica nada; basta encerrar.  
-- **Impacto esperado:** identificação rápida de problemas para acionar a provedora.
+- **Por que fazer:** monitora se há perda de pacotes ou picos de ping antes de chamar o squad.  
+- **Como reverter:** o comando não muda nada; é só fechar a janela.  
+- **Impacto esperado:** diagnóstico rápido para decidir se vale reiniciar modem/roteador ou acionar o provedor.

@@ -1,50 +1,50 @@
-# Checklist para Treinar e Competir
+# Checklist rápido antes da jogatina
 
-Use esta lista antes de treinos e campeonatos para garantir que tudo esteja funcionando perfeitamente, permitindo que você foque só no jogo.
-
----
-
-- [ ] **Reinicie o PC com antecedência**  
-  Reinicie seu computador cerca de 30 minutos antes de jogar. Isso limpa a memória e resolve pequenos problemas que podem acumular com o tempo, especialmente se o PC ficou ligado por horas ou dias.  
-  - **Por quê?** Evita travamentos inesperados e melhora a resposta dos programas.
-  - **Quando evitar?** Só pule se estiver atualizando o sistema.
-  - **Benefício:** Jogos e apps abrem mais rápido e sem engasgos.
+Use esta lista sempre que marcar aquele drop com a galera. A ideia é tirar travadinhas da frente e deixar o PC prontinho para várias horas de diversão.
 
 ---
 
-- [ ] **Feche programas desnecessários**  
-  Antes de começar, feche navegadores, apps de música, streaming e editores que não vai usar.(valido especialmente para quem possui pc com pouca memória ram ou processadores mais antigos)
-  - **Por quê?** Garanta que o máximo de energia do PC esteja dedicado ao seu jogo, evitando lentidão.
-  - **Como desfazer?** Reabra depois do treino pelo Gerenciador de Tarefas se precisar.
-  - **Benefício:** FPS estável e ping baixo, sem variações chatas.
+- [ ] **Reinicie o PC com um tempinho de folga**  
+  Reinicie o computador uns 30 minutos antes de jogar. Assim a memória limpa, updates finalizam e qualquer bugzinho some.  
+  - **Por quê?** Evita travamentos inesperados e deixa o sistema mais leve.  
+  - **Quando pular?** Se o Windows estiver atualizando, espere terminar.  
+  - **Benefício:** Jogos e apps abrem rapidinho e sem engasgos.
 
 ---
 
-- [ ] **Ative o modo desempenho do PC**  
-  Confira no Windows se o modo ativado é “Alto Desempenho” ou alguma configuração personalizada para jogos.  
-  - **Para executar basta ir em:** 'Menu Inicar, pesquisar por "ENERGIA" e clicar em 'Escolher um Plano de Energia
-  - **Por quê?** Assim o computador entrega toda a potência, sem economias automáticas que podem reduzir a velocidade.
-  - **Como desfazer?** Quando acabar, volte para “Balanceado” para economizar energia.
-  - **Benefício:** Jogos rodam com velocidade máxima, principalmente nas partes decisivas.
-  - **Extra:** Caso seu processador seja AMD e possua a nomenclatura que termina com a letra 'X' (ex: Ryzen 7 5700x) você pode utilizar o aplicativo [Ryzen Master](https://www.amd.com/pt/products/software/ryzen-master.html) para realizar um OverClock seguro e obter ainda mais desempenho. Procure um de nossos Moderadores do discord para obter auxilio.
----
-
-- [ ] **Atualize drivers essenciais**  
-  Verifique se os drivers da placa de vídeo, rede e chipset estão atualizados via programas como Nvidia APP/GeForce Experience ou AMD Adrenalin Software.  
-  - **Por quê?** Atualizações recentes ajudam a evitar erros, travamentos e garantem que tudo funcione com a versão atual do jogo.
-  - **Como desfazer?** Mantenha backups dos instaladores, assim pode voltar atrás se algo der errado.
-  - **Benefício:** Menos chances de travamentos ou problemas ao carregar mapas.
-  -**Extra:** Para Processadores AMD tema opção de baixar o [Amd_Chipset_Software](https://www.amd.com/en/resources/support-articles/faqs/CHIPSET-INSTALL.html) para atualizar as informações do ChipSet.
+- [ ] **Feche o que não precisa ficar aberto**  
+  Dê um tchau temporário para navegador lotado, editores, players de música e afins (especialmente se o PC tem pouca RAM).  
+  - **Por quê?** Libera CPU e memória para o jogo brilhar.  
+  - **Como desfazer?** É só reabrir depois da sessão.  
+  - **Benefício:** FPS mais estável e ping menos temperamental.
 
 ---
 
-- [ ] **Ajuste e teste sua comunicação**  
-  Antes de começar, teste o microfone no Discord, ajuste o volume e confira se o push-to-talk está funcionando.  
-  - **Por quê?** Uma comunicação clara e rápida pode decidir as partidas. Melhor garantir que sua equipe vai te ouvir sem ruídos.
-  - **Como desfazer?** Se o som não ficar bom, volte para as configurações padrão no Discord.
-  - **Benefício:** Coordenação certeira entre você e sua equipe nos momentos críticos.
-  - **Extra:** Nossa comunidade no discord é um lugar amigavel e de respeito mutuo, respeite para ser respeito e em caso desavenças procure os Moderados ou ADM's
+- [ ] **Cheque o plano de energia**  
+  No Windows, procure por **Plano de Energia** e escolha *Alto desempenho* ou um perfil que você criou para jogos.  
+  - **Por quê?** Evita que o sistema entre no modo economizar bem na trocação.  
+  - **Como desfazer?** Volte para *Balanceado* quando terminar.  
+  - **Benefício:** clocks firmes e respostas rápidas durante a jogatina.  
+  - **Extra:** Quem usa processador AMD com final “X” (ex.: Ryzen 7 5700X) pode liberar desempenho extra com o [Ryzen Master](https://www.amd.com/pt/products/software/ryzen-master.html). Faça com cuidado e, se pintar dúvida, chama a gente no Discord.
 
 ---
 
-Com esse checklist, você prepara tudo que precisa para focar 100% na performance durante seus treinos e campeonatos. Boa sorte e jogue tranquilo!
+- [ ] **Drivers em dia**  
+  Atualize placa de vídeo, rede e chipset pelo Nvidia App/GeForce Experience, AMD Adrenalin ou site da fabricante.  
+  - **Por quê?** Corrige bugs e dá suporte às últimas versões do jogo.  
+  - **Como desfazer?** Guarde o instalador anterior para rollback, se necessário.  
+  - **Benefício:** Menos risco de crash e carregamentos mais suaves.  
+  - **Extra:** Processadores AMD ganham com o [AMD Chipset Software](https://www.amd.com/en/resources/support-articles/faqs/CHIPSET-INSTALL.html).
+
+---
+
+- [ ] **Teste o áudio e o mic**  
+  Faça um teste rápido de microfone e volume no Discord antes de juntar o squad.  
+  - **Por quê?** Ninguém merece push falhando ou ruído alto no meio da partida.  
+  - **Como desfazer?** Volte para as configs padrão se o ajuste não agradar.  
+  - **Benefício:** Chamadas claras e risadas garantidas com o time.  
+  - **Extra:** Nosso servidor é acolhedor; mantenha o respeito e procure a moderação se precisar de ajuda.
+
+---
+
+Checklist completo? Então relaxa, pega sua bebida favorita e bora cair no mapa com tudo funcionando direitinho.

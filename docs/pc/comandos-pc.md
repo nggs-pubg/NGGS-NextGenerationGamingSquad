@@ -1,19 +1,19 @@
-# Comandos PC
+# Comandos NGGS — manutenção rápida no PC
 
 ## Otimizador NGGS (comandos CMD)
 
 - Download automático: [`nggs-otimizador.bat`](../assets/scripts/nggs-otimizador.bat) — execute como administrador.
 - Execução manual passo a passo: [`nggs-passos-manual.txt`](../assets/scripts/nggs-passos-manual.txt)
 
-> **Aviso:** use apenas em sessões locais no Windows com privilégios de administrador. O script segue recomendações oficiais e não altera registros críticos.
+> **Aviso estilo NGGS:** use apenas no seu PC pessoal, com conta de administrador. O script segue recomendações oficiais e não toca em registros sensíveis, mas sempre faça backup do que for importante.
 
 ### O que o script faz
 
 | Etapa | Descrição | Por que fazer | Como reverter | Impacto esperado |
 | --- | --- | --- | --- | --- |
-| Limpeza de temporários | Remove arquivos do `%TEMP%` e `C:\Windows\Temp`. | Libera espaço e evita caches corrompidos entre atualizações do PUBG. | Não há reversão; arquivos temporários são regenerados automaticamente. | Reduz stutter causado por arquivos travados. |
-| Otimização de rede | `ipconfig /flushdns`, `ipconfig /release`, `ipconfig /renew`, `netsh int ip reset`, `netsh winsock reset`. | Restaura pilha TCP/IP e renova DNS para conexões mais estáveis. | Reinicie o roteador ou utilize `netsh winsock reset catalog` caso queira restaurar manualmente. | Menos perda de pacotes e ping mais consistente. |
-| Plano de energia | `powercfg /setactive SCHEME_MIN`. | Força o plano **Alto Desempenho** antes dos treinos. | Reabra as configurações de energia e escolha o plano anterior (ex.: Balanceado). | Clocks mais estáveis em partidas longas. |
+| Limpeza de temporários | Remove arquivos do `%TEMP%` e `C:\Windows\Temp`. | Libera espaço e limpa caches que ficam pesados após updates do jogo. | Não há reversão; o Windows recria os arquivos sozinho. | Menos stutter causado por arquivos travados. |
+| Otimização de rede | `ipconfig /flushdns`, `ipconfig /release`, `ipconfig /renew`, `netsh int ip reset`, `netsh winsock reset`. | Restaura a pilha TCP/IP e renova DNS para estabilizar conexões. | Reinicie o roteador ou use `netsh winsock reset catalog` se quiser restaurar manualmente. | Ping mais consistente e menos queda de pacote. |
+| Plano de energia | `powercfg /setactive SCHEME_MIN`. | Ativa o plano **Alto desempenho** antes da jogatina. | Abra as configurações de energia e selecione o plano antigo (ex.: Balanceado). | Clocks firmes em sessões longas com os amigos. |
 
 ## Como usar
 
@@ -31,9 +31,9 @@
 
 ### Recomendações
 
-- Utilize o procedimento no máximo 1 vez por semana ou quando notar instabilidade.
-- Combine com o [checklist geral](checklist.md) para garantir que drivers e updates estão em dia.
-- Não edite os comandos sem validação prévia do staff técnico.
+- Rode a rotina no máximo 1 vez por semana ou quando notar que o PC ficou estranho.
+- Combine com o [checklist geral](checklist.md) para garantir drivers e updates em dia.
+- Evite alterar os comandos sem conversar com a equipe técnica ou entender bem cada etapa.
 
 ## Conteúdo do arquivo `.bat`
 
@@ -43,7 +43,7 @@
 color 0b
 setlocal enabledelayedexpansion
 
-Title NGGS - Otimizador seguro para treinos
+Title NGGS - Otimizador seguro para jogatinas
 
 :: Solicita execução como administrador
 openfiles >nul 2>&1 || (
@@ -77,13 +77,15 @@ echo 3) Ajuste de energia para alto desempenho
 powercfg /setactive SCHEME_MIN
 
 echo.
-echo Operacao concluida. Reinicie o computador antes do proximo treino.
+echo Operacao concluida. Reinicie o computador antes da proxima jogatina.
 echo Pressione qualquer tecla para fechar...
 pause >nul
 endlocal
 ```
 
 ## Referência completa de comandos
+
+> Para quem gosta de se aventurar além do script: use apenas se compreender cada parâmetro. Anote mudanças para poder desfazer depois.
 
 ### Prompt de Comando (CMD)
 

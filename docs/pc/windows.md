@@ -1,4 +1,4 @@
-# Windows 10/11 — Preparação Realista para FPS
+# Windows 10/11 — Preparação tranquila para FPS
 
 Todos os ajustes abaixo são suportados oficialmente pela Microsoft. Siga na ordem sugerida e sempre leia as seções **Como reverter** para voltar ao estado anterior.
 
@@ -6,7 +6,7 @@ Todos os ajustes abaixo são suportados oficialmente pela Microsoft. Siga na ord
 - **Descrição:** limite a execução de aplicativos UWP em segundo plano em `Configurações > Privacidade > Aplicativos em segundo plano`.  
 - **Por que fazer:** diminui consumo de RAM e CPU por processos que não impactam a jogabilidade.  
 - **Como reverter:** reabilite aplicativos específicos ativando novamente o toggle.  
-- **Impacto esperado:** estabilidade maior em lobbies grandes.
+- **Impacto esperado:** estabilidade maior em lobbies cheios com os amigos.
 
 ## Ajustar efeitos visuais
 - **Descrição:** em `Painel de Controle > Sistema > Configurações Avançadas > Desempenho`, selecione **Ajustar para obter um melhor desempenho**, preservando suavização de fontes se necessário.  
@@ -22,13 +22,13 @@ Todos os ajustes abaixo são suportados oficialmente pela Microsoft. Siga na ord
 
 ## Programador GPU acelerado (Hardware Accelerated GPU Scheduling)
 - **Descrição:** em `Configurações > Sistema > Tela > Configurações de gráficos`, ative o agendador de GPU acelerado por hardware. Disponível para GPUs compatíveis (NVIDIA série 10+, AMD 5600+).  
-- **Por que fazer:** reduz latência de renderização, útil para jogos competitivos.  
+- **Por que fazer:** reduz a latência de renderização, deixando o jogo mais responsivo mesmo em partidas casuais.  
 - **Como reverter:** desative a opção e reinicie o PC; útil para troubleshooting caso ocorram artefatos.  
 - **Impacto esperado:** melhoria leve na resposta de frame-time.
 
 ## Atualizações automáticas
-- **Descrição:** pause atualizações por até 7 dias antes de campeonatos via `Configurações > Windows Update > Pausar`.  
-- **Por que fazer:** evita reinicializações ou downloads pesados durante treinos.  
+- **Descrição:** pause atualizações por até 7 dias antes de eventos ou corujões com os amigos via `Configurações > Windows Update > Pausar`.  
+- **Por que fazer:** evita reinicializações ou downloads pesados durante as jogatinas.  
 - **Como reverter:** clique em **Retomar atualizações** após a sessão.  
 - **Impacto esperado:** sessões ininterruptas, sem perda de foco.
 
