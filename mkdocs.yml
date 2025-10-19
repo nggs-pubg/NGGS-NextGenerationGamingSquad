@@ -42,7 +42,7 @@ nav:
       - Windows: pc/windows.md
       - Armazenamento: pc/storage.md
       - Rede: pc/rede.md
-      - Otimizador CMD: pc/comandos-cmd.md
+      - Otimizador CMD: pc/comandos-pc.md
   - GPU:
       - NVIDIA: gpu/nvidia.md
       - AMD: gpu/amd.md
