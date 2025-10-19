@@ -1,27 +1,27 @@
-# AMD — FidelityFX ao seu favor
+# AMD — FidelityFX a favor da jogatina
 
-## Radeon Software — Perfil Jogo
-- **Descrição:** crie um perfil dedicado ao PUBG em `Configurações > Gráficos`. Ajuste **Modo de Energia** para *Desempenho*.  
-- **Por que fazer:** impede que o driver alterne para estados de baixa energia durante o jogo.  
-- **Como reverter:** retorne para *Padrão* quando estiver trabalhando ou estudando.  
-- **Impacto esperado:** clocks sustentados de GPU/VRAM.
+## Perfil dedicado no Radeon Software
+- **Descrição:** crie um perfil para o PUBG em `Configurações > Gráficos` e deixe o **Modo de Energia** em *Desempenho*.  
+- **Por que fazer:** impede que o driver reduza clocks quando você ainda está em partida.  
+- **Como reverter:** volte para *Padrão* quando estiver trabalhando ou só navegando.  
+- **Impacto esperado:** GPU e VRAM seguram a bronca sem engasgos.
 
-## Anti-Lag
-- **Descrição:** habilite **Radeon Anti-Lag** no perfil do PUBG.  
-- **Por que fazer:** reduz a fila de renderização, diminuindo input lag.  
-- **Como reverter:** desative o toggle se sentir instabilidade em jogos não suportados.  
-- **Impacto esperado:** mira mais responsiva, especialmente em flick shots.
+## Radeon Anti-Lag
+- **Descrição:** ative o toggle no perfil do PUBG.  
+- **Por que fazer:** encurta a fila de renderização, diminuindo o atraso entre mouse e tela.  
+- **Como reverter:** desligue caso algum jogo não seja compatível.  
+- **Impacto esperado:** mira mais responsiva, excelente para sprays curtos.
 
 ## Radeon Chill (opcional)
-- **Descrição:** configure limites mínimo/máximo para controlar temperatura em setups com refrigeração limitada.  
-- **Por que fazer:** mantém ruído e consumo controlados durante scrims longas.  
-- **Como reverter:** desabilite o recurso para liberar FPS máximo.  
-- **Impacto esperado:** estabilidade térmica sem comprometer partidas críticas.
+- **Descrição:** defina limites mínimo/máximo de FPS para segurar temperatura quando a refrigeração é limitada.  
+- **Por que fazer:** mantém ruído e consumo sob controle durante jogatinas longas.  
+- **Como reverter:** desabilite a função para liberar todo o potencial da placa.  
+- **Impacto esperado:** estabilidade térmica sem sustos.
 
 ## Shader Cache
 - **Descrição:** deixe o **Shader Cache** em *AMD otimizado*.  
-- **Por que fazer:** acelera carregamento de shaders após updates e mantém consistência de performance.  
-- **Como reverter:** selecione *Desativado* caso investigue bugs específicos.  
-- **Impacto esperado:** menos stutter ao entrar em áreas densas.
+- **Por que fazer:** agiliza carregamento de shaders depois de cada atualização do jogo.  
+- **Como reverter:** selecione *Desativado* apenas se estiver investigando algum bug.  
+- **Impacto esperado:** menos stutter ao atravessar áreas densas.
 
-> **Referência:** [AMD Radeon Software Guide](https://www.amd.com/en/support/kb/faq/dh-182) para detalhes oficiais.
+> **Referência:** [AMD Radeon Software Guide](https://www.amd.com/en/support/kb/faq/dh-182)

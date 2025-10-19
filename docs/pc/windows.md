@@ -1,4 +1,4 @@
-# Windows 10/11 — Preparação Realista para FPS
+# Windows 10/11 — Preparação tranquila para FPS
 
 Todos os ajustes abaixo são suportados oficialmente pela Microsoft. Siga na ordem sugerida e sempre leia as seções **Como reverter** para voltar ao estado anterior.
 
@@ -6,7 +6,7 @@ Todos os ajustes abaixo são suportados oficialmente pela Microsoft. Siga na ord
 - **Descrição:** limite a execução de aplicativos UWP em segundo plano em `Configurações > Privacidade > Aplicativos em segundo plano`.  
 - **Por que fazer:** diminui consumo de RAM e CPU por processos que não impactam a jogabilidade.  
 - **Como reverter:** reabilite aplicativos específicos ativando novamente o toggle.  
-- **Impacto esperado:** estabilidade maior em lobbies grandes.
+- **Impacto esperado:** estabilidade maior em lobbies cheios com os amigos.
 
 ## Ajustar efeitos visuais
 - **Descrição:** em `Painel de Controle > Sistema > Configurações Avançadas > Desempenho`, selecione **Ajustar para obter um melhor desempenho**, preservando suavização de fontes se necessário.  

@@ -25,8 +25,8 @@ Ajuste sua sensibilidade com a ferramenta abaixo. A área interativa ocupa **800
     </fieldset>
     <p class="dpi-tool__details">
       • **Yaw** indica quantos graus a câmera gira por contagem de mouse. Para o PUBG utilizamos `0.0025`. <br />
-      • Use valores oficiais do sensor (400/800/1600) para evitar interpolação. <br />
-      • A qualquer momento, clique em <em>Valores NGGS</em> para retornar ao preset recomendado de treino.
+      • Use valores nativos do sensor (400/800/1600) para evitar interpolação. <br />
+      • Clique em <em>Valores NGGS</em> para recuperar nosso preset de conforto.
     </p>
   </div>
   <div class="dpi-tool__output">
@@ -46,31 +46,21 @@ Ajuste sua sensibilidade com a ferramenta abaixo. A área interativa ocupa **800
       <span class="dpi-tool__chart-label">Visualização relativa</span>
     </div>
     <p class="dpi-tool__details">
-      A barra representa a proporção do seu eDPI em relação a um limite sugerido de 5000. Mantenha valores consistentes para replicar seus treinos em LANs.
+      A barra mostra o tamanho do seu eDPI em relação a um limite sugerido de 5000. Manter números parecidos ajuda a sentir o mesmo controle em qualquer jogatina.
     </p>
   </div>
 </div>
-
-## Gerar via CLI (opcional)
-
-Se preferir manter um histórico dos cálculos em Markdown, utilize a CLI da NGGS:
-
-```bash
-nggs calc edpi --dpi 800 --sens 1.2 --saida docs/mouse/calculadora.md
-```
-
-O comando atualiza a seção **Resultado Atual** do arquivo e cria um backup `.bak` antes de sobrescrever. Ajuste `--yaw` para outros jogos se necessário.
 
 ## Como interpretar
 
 - **eDPI (Effective DPI)**  
   - **Descrição:** produto entre DPI físico e sensibilidade do jogo.  
-  - **Por que fazer:** padroniza sensibilidade ao comparar com outros títulos.  
-  - **Como reverter:** retorne aos valores anteriores via CLI ou anotação manual.  
+  - **Por que fazer:** padroniza a sensibilidade quando você alterna entre games.  
+  - **Como reverter:** anote seus valores atuais e, se não curtir, volte para eles na calculadora.  
   - **Impacto esperado:** controle previsível ao alternar entre modos de mira.
 
 - **Distância de 360°**  
   - **Descrição:** quanto o mouse precisa se deslocar para realizar uma volta completa no jogo.  
   - **Por que fazer:** ajuda a calibrar espaço do mousepad e encontrar conforto na mira.  
-  - **Como reverter:** refaça o cálculo com os valores antigos ou restaure o backup `.bak`.  
-  - **Impacto esperado:** movimentos mais consistentes, evitando extrapolar o mousepad em engagements rápidos.
+  - **Como reverter:** refaça o cálculo com os valores antigos ou use sua anotação manual.  
+  - **Impacto esperado:** movimentos mais consistentes, evitando extrapolar o mousepad em lutas intensas.

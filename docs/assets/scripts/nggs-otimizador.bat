@@ -3,7 +3,7 @@
 color 0b
 setlocal enabledelayedexpansion
 
-Title NGGS - Otimizador seguro para treinos
+Title NGGS - Otimizador seguro para jogatinas
 
 :: Solicita execução como administrador
 openfiles >nul 2>&1 || (
@@ -37,7 +37,7 @@ echo 3) Ajuste de energia para alto desempenho
 powercfg /setactive SCHEME_MIN
 
 echo.
-echo Operacao concluida. Reinicie o computador antes do proximo treino.
+echo Operacao concluida. Reinicie o computador antes da proxima jogatina.
 echo Pressione qualquer tecla para fechar...
 pause >nul
 endlocal

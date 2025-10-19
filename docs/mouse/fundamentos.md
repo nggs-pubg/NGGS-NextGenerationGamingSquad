@@ -1,25 +1,25 @@
-# Fundamentos de Aim — Mouse e Postura
+# Fundamentos de mira — postura leve e precisa
 
 ## Ajuste de grip
-- **Descrição:** defina a pegada (palm, claw ou fingertip) de acordo com o tamanho da sua mão e estilo de jogo.  
-- **Por que fazer:** melhora consistência de flicks e tracking contínuo.  
-- **Como reverter:** experimente outra pegada durante treinos, registrando sensações em uma planilha de feedback.  
-- **Impacto esperado:** controle mais previsível da mira.
+- **Descrição:** escolha a pegada (palm, claw, fingertip) que combina com o tamanho da sua mão e com o jeito que você gosta de jogar.  
+- **Por que fazer:** manter a mesma pegada evita surpresas em flicks e no tracking.  
+- **Como reverter:** experimente outra pegada por alguns rounds casuais e anote o que sentiu.  
+- **Impacto esperado:** movimentos mais previsíveis e menos tensão nas mãos.
 
 ## Altura do mousepad
-- **Descrição:** mantenha o mousepad alinhado ao nível do antebraço, evitando apoios quebrados.  
-- **Por que fazer:** reduz tensão muscular que leva a tremores em spray control.  
-- **Como reverter:** ajuste a cadeira ou suporte do mousepad conforme necessário.  
-- **Impacto esperado:** menor fadiga em sessions acima de 2 horas.
+- **Descrição:** alinhe o mousepad na mesma altura do antebraço, sem quebrar o pulso.  
+- **Por que fazer:** reduz fadiga e tremor quando a jogatina se estende.  
+- **Como reverter:** ajuste cadeira ou apoio até encontrar a posição confortável novamente.  
+- **Impacto esperado:** mão relaxada mesmo depois de várias partidas.
 
-## DPI nativo
-- **Descrição:** utilize etapas nativas (400/800/1600) fornecidas pelo sensor para evitar interpolação.  
-- **Por que fazer:** sensores no modo nativo entregam rastreamento mais fiel e com menos jitter.  
-- **Como reverter:** retorne ao DPI anterior via software do mouse caso não se adapte.  
-- **Impacto esperado:** mira estável, especialmente em ADS de médio alcance.
+## Use o DPI nativo
+- **Descrição:** prefira valores nativos do sensor (400/800/1600) para evitar interpolação.  
+- **Por que fazer:** sensores trabalhando no “doce” entregam rastreamento mais limpo.  
+- **Como reverter:** volte ao DPI anterior com o software do mouse se não curtir.  
+- **Impacto esperado:** mira estável, especialmente em ADS e sprays curtos.
 
-## Crosshair e sensibilidade no PUBG
-- **Descrição:** gere seu eDPI e distância de 360° com a calculadora da NGGS (veja `Mouse > Calculadora`).  
-- **Por que fazer:** traduz sensibilidade entre jogos e facilita replicar settings em LANs.  
-- **Como reverter:** mantenha backup das configs no arquivo `GameUserSettings.ini`.  
-- **Impacto esperado:** consistência ao migrar entre FPP/TPP e modos de treino.
+## Ajuste a sensibilidade com propósito
+- **Descrição:** utilize a [calculadora NGGS](calculadora.md) para conferir eDPI e distância de 360°.  
+- **Por que fazer:** ter números anotados facilita replicar seu feeling em outros jogos ou PCs.  
+- **Como reverter:** mantenha um backup do `GameUserSettings.ini` ou anote valores preferidos.  
+- **Impacto esperado:** consistência ao migrar entre FPP/TPP e modos de treinamento.

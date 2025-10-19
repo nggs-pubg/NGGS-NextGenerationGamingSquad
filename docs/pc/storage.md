@@ -1,25 +1,25 @@
-# Armazenamento — SSDs prontos para o PUBG
+# Armazenamento — SSDs prontos para qualquer lobby
 
 ## Liberar espaço em SSD
-- **Descrição:** utilize `Configurações > Sistema > Armazenamento` para executar a **Limpeza de Disco** e remover arquivos temporários.  
-- **Por que fazer:** SSD com menos de 10% livre pode causar quedas de performance e travamentos em loading.  
-- **Como reverter:** nenhum impacto permanente; caso remova algo necessário, restaure a partir da Lixeira (se disponível).  
-- **Impacto esperado:** telas de carregamento mais rápidas e menos stutter ao entrar em prédios.
+- **Descrição:** abra `Configurações > Sistema > Armazenamento` e use a limpeza de arquivos temporários.  
+- **Por que fazer:** SSD quase cheio (menos de 10% livre) pode causar travadinhas em loadings e texturas.  
+- **Como reverter:** se apagar algo sem querer, restaure pela Lixeira ou backup.  
+- **Impacto esperado:** telas de carregamento mais rápidas e quedas suaves em qualquer mapa.
 
-## Habilitar TRIM manual (para SSD SATA)
-- **Descrição:** execute o comando `Optimize-Volume -DriveLetter C -ReTrim -Verbose` no PowerShell com permissões elevadas.  
-- **Por que fazer:** mantém a performance consistente ao longo do tempo, removendo blocos marcados para exclusão.  
-- **Como reverter:** TRIM é seguro; não há reversão necessária. Apenas evite executar repetidamente em SSDs já otimizados.  
-- **Impacto esperado:** entrega constante de velocidade de leitura/escrita.
+## Rodar TRIM manual em SSD SATA
+- **Descrição:** no PowerShell (administrador) execute `Optimize-Volume -DriveLetter C -ReTrim -Verbose`.  
+- **Por que fazer:** mantém a performance consistente ao limpar blocos marcados para exclusão.  
+- **Como reverter:** não precisa — TRIM é um processo seguro, apenas evite rodar repetidamente na mesma sessão.  
+- **Impacto esperado:** leitura/escrita estável mesmo após longas maratonas de jogo.
 
-## Verificar integridade do disco
-- **Descrição:** rode `chkdsk /scan` no Prompt de Comando.  
-- **Por que fazer:** detecta clusters corrompidos que podem resultar em falhas durante quedas de energia.  
-- **Como reverter:** nenhuma mudança permanente. Caso o comando peça agendamento na próxima inicialização, aceite apenas quando puder reiniciar.  
-- **Impacto esperado:** redução de crashes relacionados a arquivos do jogo.
+## Conferir integridade do disco
+- **Descrição:** execute `chkdsk /scan` no Prompt de Comando.  
+- **Por que fazer:** diagnostica erros que podem causar crash em atualizações ou quedas de energia.  
+- **Como reverter:** o comando não altera arquivos. Se pedir agendamento, aceite quando puder reiniciar.  
+- **Impacto esperado:** menos surpresas com arquivos corrompidos no meio do fim de semana.
 
-## Certificar localização do PUBG
-- **Descrição:** mantenha o PUBG instalado em SSD NVMe ou SATA rápido, evitando discos externos via USB 2.0/3.0.  
-- **Por que fazer:** assets carregam mais rápido, resultando em texturas nítidas imediatamente ao cair no mapa.  
-- **Como reverter:** se precisar mover o jogo, utilize a opção **Mover** da Steam/Epic para outro drive.  
-- **Impacto esperado:** renderização sem delay em hot drops.
+## Mantenha o PUBG no SSD
+- **Descrição:** instale o PUBG (e outros jogos mais pesados) em um SSD NVMe ou SATA rápido.  
+- **Por que fazer:** assets carregam rápido, texturas aparecem no tempo certo e você não chega atrasado no loot.  
+- **Como reverter:** para mover o jogo, use a opção **Mover** da Steam/Epic para outro drive.  
+- **Impacto esperado:** renderização imediata em hot drops e menos “borrachudos” no chão.

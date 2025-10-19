@@ -1,23 +1,20 @@
 # Sobre a NGGS
 
-A NGGS nasceu com o compromisso de evoluir jogadores de FPS com ética e responsabilidade. Nossos materiais priorizam melhorias legítimas em hardware, software e habilidades individuais.
+Somos um time de jogadores FPS, survival e battle royale que curte compartilhar configuração, macete legítimo e boas risadas. A NGGS nasceu para ajudar a galera a montar setups estáveis, entender o básico de hardware/software e curtir partidas honestas sem virar compromisso profissional.
 
-## Política anti-cheat
+## Nosso jeito
+- **Jogo limpo:** não aceitamos trapaça, macro ou qualquer automatização. Preferimos evolução real, respeitando as regras de cada jogo e fabricante.  
+- **Explicamos cada passo:** sempre mostramos o que mudar, por que fazer e como desfazer. Se não gostou do resultado, é só voltar um passo.  
+- **Comunidade acolhedora:** Discord aberto para tirar dúvidas, revisar clipes e montar squads descontraídos.
 
-- **Descrição:** proibição completa de automações, scripts de no-recoil, radar, wallhack, macros ou qualquer ferramenta que altere entradas do jogador.  
-- **Por que fazer:** manter alinhamento com os termos de serviço da Krafton, dos provedores de hardware e das ligas oficiais.  
-- **Como reverter:** se algum integrante testar um software duvidoso, deve removê-lo imediatamente, limpar o sistema e comunicar a moderação da NGGS.  
-- **Impacto esperado:** reputação sólida e espaço seguro para evolução do time.
+## Fontes que seguimos
+- Microsoft, AMD, NVIDIA, Intel — documentação oficial de sistemas e drivers.  
+- Krafton e demais desenvolvedores — notas de patch, políticas de uso e guias oficiais.  
+- Provedores e especialistas em rede — boas práticas de conexão aprovadas pelos órgãos reguladores.
 
-## Fontes oficiais
+## Quer participar?
+- Explore os guias do site e experimente as dicas.  
+- Entre no nosso Discord para pedir ajuda, compartilhar resultados ou sugerir novos conteúdos.  
+- Conte pra gente o que funcionou (ou não) para continuarmos melhorando juntos.
 
-- Microsoft, AMD, NVIDIA, Intel: documentação de sistemas e drivers.  
-- Krafton: atualizações de versão, balanceamento e regras do PUBG.  
-- ANATEL e provedores locais: regulamentações de rede e boas práticas.
-
-## Como contribuir
-
-1. Abra issue descrevendo a melhoria desejada.  
-2. Use a CLI (`nggs`) para gerar conteúdo padronizado.  
-3. Execute `ruff`, `black`, `isort`, `pytest` e `mkdocs build` antes de abrir pull request.  
-4. Respeite os modelos de "Descrição / Por que fazer / Como reverter / Impacto esperado" em toda nova dica técnica.
+Mais importante: divirta-se, respeite a galera e aproveite a jornada. Estamos aqui para isso. 🎮
