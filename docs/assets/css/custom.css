@@ -535,6 +535,164 @@
   color: var(--nggs-muted);
 }
 
+.nggs-discord {
+  display: grid;
+  gap: clamp(2.5rem, 6vw, 4rem);
+  margin: 0 auto clamp(4rem, 8vw, 5rem);
+  max-width: 1080px;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.nggs-discord__hero {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2rem);
+  border-radius: 28px;
+  background: linear-gradient(155deg, rgba(5, 8, 20, 0.92), rgba(52, 61, 155, 0.45));
+  padding: clamp(2.5rem, 6vw, 4rem);
+  box-shadow: 0 30px 60px rgba(3, 8, 22, 0.45);
+}
+
+@media (min-width: 960px) {
+  .nggs-discord__hero {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.9fr);
+    align-items: center;
+  }
+}
+
+.nggs-discord__hero-content h1 {
+  font-family: "Oswald", var(--md-text-font-family, sans-serif);
+  font-size: clamp(2.3rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.nggs-discord__hero-content p {
+  color: var(--nggs-muted);
+  margin-bottom: clamp(1.5rem, 4vw, 2rem);
+}
+
+.nggs-discord__hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.nggs-discord__hero-card {
+  display: grid;
+  gap: 1.2rem;
+  padding: clamp(1.6rem, 4vw, 2rem);
+  border-radius: 22px;
+  background: rgba(12, 16, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.nggs-discord__hero-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--nggs-muted);
+  display: grid;
+  gap: 0.55rem;
+  font-size: 0.95rem;
+}
+
+.nggs-discord__hero-badge {
+  width: clamp(120px, 38%, 160px);
+  margin-inline: auto;
+}
+
+.nggs-discord__hero-badge img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(2, 6, 18, 0.55);
+}
+
+.nggs-discord__grid {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  background: linear-gradient(160deg, rgba(79, 91, 255, 0.16), rgba(5, 7, 20, 0.85));
+  padding: clamp(2.5rem, 6vw, 4rem);
+  border-radius: 26px;
+  box-shadow: 0 25px 50px rgba(3, 7, 18, 0.4);
+}
+
+@media (min-width: 900px) {
+  .nggs-discord__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.nggs-discord__grid h2 {
+  font-family: "Oswald", var(--md-text-font-family, sans-serif);
+  margin-bottom: 1rem;
+}
+
+.nggs-discord__grid ol,
+.nggs-discord__grid ul {
+  margin: 0;
+  padding-left: 1.35rem;
+  color: var(--nggs-muted);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.nggs-discord__tip {
+  margin-top: 1.2rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  background: rgba(5, 8, 20, 0.65);
+  border: 1px solid rgba(1, 225, 255, 0.28);
+  color: var(--nggs-highlight);
+  font-size: 0.95rem;
+}
+
+.nggs-discord__rules {
+  list-style: disc;
+}
+
+.nggs-discord__cta {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: 26px;
+  padding: clamp(2.4rem, 5vw, 3.6rem);
+  background: linear-gradient(150deg, rgba(1, 225, 255, 0.12), rgba(18, 22, 60, 0.88));
+  box-shadow: 0 25px 50px rgba(3, 7, 18, 0.38);
+}
+
+@media (min-width: 900px) {
+  .nggs-discord__cta {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    align-items: center;
+  }
+}
+
+.nggs-discord__cta p {
+  color: var(--nggs-muted);
+  margin-bottom: 1.4rem;
+}
+
+.nggs-discord__cta-card {
+  padding: clamp(1.6rem, 4vw, 2.2rem);
+  border-radius: 20px;
+  background: rgba(9, 12, 32, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 40px rgba(3, 7, 20, 0.4);
+}
+
+.nggs-discord__cta-card h3 {
+  font-family: "Oswald", var(--md-text-font-family, sans-serif);
+  margin-bottom: 1rem;
+}
+
+.nggs-discord__cta-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--nggs-muted);
+  display: grid;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+}
+
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3 {
