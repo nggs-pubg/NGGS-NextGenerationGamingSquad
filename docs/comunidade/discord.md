@@ -16,7 +16,7 @@
     </div>
     <div class="nggs-discord__hero-card">
       <div class="nggs-discord__hero-badge">
-        <img src="../assets/images/logo-4.png" alt="Símbolo NGGS neon" />
+        <img src="../../assets/images/logo-4.png" alt="Símbolo NGGS neon" />
       </div>
       <ul>
         <li><strong>Suporte técnico amigo:</strong> voz, texto e compartilhamento de tela.</li>
