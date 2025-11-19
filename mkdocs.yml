@@ -19,7 +19,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/SZF2H5w7ZG
+      link: https://discord.gg/hWtu7s2EFt
       name: "Comunidade no Discord"
 extra_css:
   - assets/css/custom.css
