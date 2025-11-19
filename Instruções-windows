@@ -1,0 +1,174 @@
+No PowerShell do Windows, os comandos para criar e ativar um ambiente virtual Python e instalar dependências ficam assim:
+
+# Criar o ambiente virtual
+python -m venv .venv
+
+# Ativar o ambiente virtual (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Atualizar o pip
+python -m pip install --upgrade pip
+
+# Instalar dependências do requirements.txt
+pip install -r requirements.txt
+
+# Instalar o pacote localmente em modo editável
+pip install -e .
+
+
+💡 Observação: Se você receber um erro de execução de scripts ao ativar (execution of scripts is disabled on this system), rode no PowerShell como administrador:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+Depois, tente ativar novamente o .venv\Scripts\Activate.ps1.
+
+Se quiser, posso te mostrar uma versão compacta que já faz tudo de uma vez no PowerShell. Quer que eu faça?
+
+Você disse:
+faça uma versão no powersherl
+
+
+# Instruções de compilação e testes NGGS
+
+Siga o passo a passo abaixo sempre que precisar validar e compilar o projeto após alterações.
+
+## 1. Preparar ambiente Python
+
+
+bash
+python -m venv .venv
+source .venv/bin/activate 
+pip install --upgrade pip
+pip install -r requirements.txt
+pip install -e .
+
+
+## 2. Validar qualidade do código (backend + frontend)
+
+Execute as mesmas checagens usadas no CI para garantir que a branch está saudável:
+
+
+bash
+ruff check --output-format=github .
+black --check .
+isort --check-only .
+pytest -q
+
+
+- **Frontend**: após alterações visuais ou de JS, gere o build (mkdocs build --strict) e valide em mkdocs serve usando os breakpoints desktop (≥1280px) e mobile (≤480px). A calculadora eDPI deve manter 800x600 em monitores e responsividade plena em telas menores.
+
+Se algum comando apontar problema, corrija antes de prosseguir.
+
+## 3. Compilar o site estático
+
+Gere os arquivos do MkDocs em site/:
+
+
+bash
+mkdocs build --strict
+
+
+O parâmetro --strict garante que qualquer erro de lint nos arquivos Markdown interrompa o build.
+
+> Após builds que envolvam a calculadora, confirme manualmente no preview se inputs, botões e gráficos respondem corretamente. Em caso de alterações na CLI, execute nggs gen weapon e nggs calc edpi para verificar se ainda geram arquivos dentro do padrão.
+
+## 4. Visualizar em desenvolvimento
+
+Para revisar o layout e interações em tempo real:
+
+
+bash
+mkdocs serve
+
+
+Acesse http://127.0.0.1:8000 no navegador e pressione Ctrl+C para encerrar quando terminar.
+
+## 5. Fluxo sugerido antes do commit
+
+1. Atualize ou gere conteúdo via CLI se necessário (nggs gen weapon, nggs calc edpi).  
+2. Rode os comandos dos passos 2 e 3.  
+3. Verifique se nenhum arquivo .bak permanece no repositório (eles são ignorados pelo .gitignore).  
+4. Teste a página PC > Otimizador CMD para garantir que a tabela e o bloco .bat renderizam corretamente.  
+5. Faça commit apenas após tudo estar verde.
+
+Pronto! O mesmo pipeline é executado automaticamente no GitHub Actions ao abrir um PR ou fazer push na main.
+O ChatGPT disse:
+
+Aqui está a versão do seu guia adaptada para PowerShell no Windows, com todos os comandos ajustados:
+
+Instruções de compilação e testes NGGS (PowerShell)
+
+Siga o passo a passo abaixo sempre que precisar validar e compilar o projeto após alterações.
+
+1. Preparar ambiente Python
+# Criar o ambiente virtual
+python -m venv .venv
+
+# Ativar o ambiente virtual (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Atualizar pip
+python -m pip install --upgrade pip
+
+# Instalar dependências do requirements.txt
+pip install -r requirements.txt
+
+# Instalar o pacote localmente em modo editável
+pip install -e .
+
+
+⚠️ Se receber erro de execução de scripts (execution of scripts is disabled on this system), rode:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+Depois, ative novamente o ambiente virtual.
+
+2. Validar qualidade do código (backend + frontend)
+
+Execute as mesmas checagens usadas no CI para garantir que a branch está saudável:
+
+ruff check --output-format=github .
+black --check .
+isort --check-only .
+pytest -q
+
+
+Frontend: após alterações visuais ou de JS, gere o build (mkdocs build --strict) e valide em mkdocs serve usando os breakpoints desktop (≥1280px) e mobile (≤480px). A calculadora eDPI deve manter 800x600 em monitores e responsividade plena em telas menores.
+
+Se algum comando apontar problema, corrija antes de prosseguir.
+
+3. Compilar o site estático
+
+Gere os arquivos do MkDocs em site/:
+
+mkdocs build --strict
+
+
+O parâmetro --strict garante que qualquer erro de lint nos arquivos Markdown interrompa o build.
+
+Após builds que envolvam a calculadora, confirme manualmente no preview se inputs, botões e gráficos respondem corretamente. Em caso de alterações na CLI, execute nggs gen weapon e nggs calc edpi para verificar se ainda geram arquivos dentro do padrão.
+
+4. Visualizar em desenvolvimento
+
+Para revisar o layout e interações em tempo real:
+
+mkdocs serve
+
+
+Acesse http://127.0.0.1:8000 no navegador e pressione Ctrl+C para encerrar quando terminar.
+
+5. Fluxo sugerido antes do commit
+
+Atualize ou gere conteúdo via CLI se necessário (nggs gen weapon, nggs calc edpi).
+
+Rode os comandos dos passos 2 e 3.
+
+Verifique se nenhum arquivo .bak permanece no repositório (eles são ignorados pelo .gitignore).
+
+Teste a página PC > Otimizador CMD para garantir que a tabela e o bloco .bat renderizam corretamente.
+
+Faça commit apenas após tudo estar verde.
+
+Pronto! O mesmo pipeline é executado automaticamente no GitHub Actions ao abrir um PR ou fazer push na main.
