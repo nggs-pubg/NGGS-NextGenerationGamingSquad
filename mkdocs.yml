@@ -1,12 +1,23 @@
 site_name: NGGS
-site_description: "Guias legítimos da NGGS para otimização de PC, periféricos e PUBG."
+site_description: "Guias legítimos da NGGS para otimização de PC, periféricos, PUBG e ARC Raiders."
 site_url: https://nggs.gg
 theme:
   name: material
+  custom_dir: overrides
   language: pt-BR
+  logo: assets/images/logo-3.png
+  favicon: assets/images/logo-3.png
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.top
     - navigation.tracking
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
     - toc.integrate
     - content.code.copy
   palette:
@@ -17,10 +28,13 @@ theme:
     text: "Montserrat"
     code: "Fira Code"
 extra:
+  generator: false
+  homepage: https://nggs.gg
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/hWtu7s2EFt
       name: "Comunidade no Discord"
+copyright: "NGGS Play Hub · Conteúdo seguro, reversível e feito por jogadores."
 extra_css:
   - assets/css/custom.css
 extra_javascript:
@@ -31,15 +45,13 @@ markdown_extensions:
   - def_list
   - pymdownx.highlight
   - pymdownx.superfences
+  - pymdownx.details
   - toc:
       permalink: true
 nav:
   - Início: index.md
   - Comunidade:
       - Discord: comunidade/discord.md
-  - Concord:
-      - Visao Geral: concord/index.md
-      - Como Publicar: concord/publicacao.md
   - Configurar PC:
       - Checklist: pc/checklist.md
       - Windows: pc/windows.md
@@ -59,4 +71,10 @@ nav:
       - Armas:
           - Dicas: pubg/armas/dicas-de-armas.md
           - Modelo: pubg/armas/_template-arma.md
+  - ARC Raiders:
+      - Guia Geral: arc-raiders/guia-geral.md
+      - Equipamentos: arc-raiders/equipamentos.md
+      - Armas:
+          - Dicas: arc-raiders/armas/dicas-de-armas.md
+          - Modelo: arc-raiders/armas/_template-arma.md
   - Sobre: sobre.md

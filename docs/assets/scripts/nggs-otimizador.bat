@@ -1,43 +1,29 @@
-:: NGGS - Otimização rápida de rede e limpeza temporária
+:: NGGS - Manutenção conservadora e opcional
 @echo off
 color 0b
-setlocal enabledelayedexpansion
+setlocal
 
 Title NGGS - Otimizador seguro para jogatinas
 
-:: Solicita execução como administrador
-openfiles >nul 2>&1 || (
-  echo [NGGS] Execute este arquivo como Administrador antes de continuar.
-  pause
-  exit /b 0
-)
-
 echo =====================================================
-echo  NGGS - Rotina legítima de manutenção
-echo 1) Limpeza de temporários do Windows
-if exist "%TEMP%" (
-  echo    >> Removendo arquivos temporários do usuario
-  del /q /f /s "%TEMP%\*" >nul 2>&1
-)
-if exist "C:\Windows\Temp" (
-  echo    >> Limpando temporarios do sistema
-  del /q /f /s "C:\Windows\Temp\*" >nul 2>&1
-)
+echo  NGGS - Manutencao conservadora
+echo  Nenhuma etapa apaga arquivos ou redefine a rede.
 
 echo.
-echo 2) Otimizacao de rede (DNS + Winsock)
-ipconfig /flushdns
-ipconfig /release
-ipconfig /renew
-netsh int ip reset
-netsh winsock reset
+choice /c SN /n /m "Limpar apenas o cache DNS? [S/N] "
+if errorlevel 2 goto energia
+ipconfig /flushdns || echo [AVISO] Nao foi possivel limpar o DNS.
 
+:energia
 echo.
-echo 3) Ajuste de energia para alto desempenho
-powercfg /setactive SCHEME_MIN
+choice /c SN /n /m "Ativar o plano Alto Desempenho? [S/N] "
+if errorlevel 2 goto fim
+powercfg /getactivescheme
+powercfg /setactive SCHEME_MIN || echo [AVISO] Plano indisponivel neste computador.
 
+:fim
 echo.
-echo Operacao concluida. Reinicie o computador antes da proxima jogatina.
+echo Operacao concluida. Nao e necessario reiniciar.
 echo Pressione qualquer tecla para fechar...
 pause >nul
 endlocal

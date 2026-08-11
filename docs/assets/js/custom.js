@@ -70,7 +70,7 @@ const initVideoCarousels = () => {
   if (!carousels.length) return;
 
   const videoFrames = new Set();
-  const YT_ORIGIN = "https://www.youtube.com";
+  const YT_ORIGIN = "https://www.youtube-nocookie.com";
 
   const sendPlayerCommand = (iframe, command) => {
     if (!iframe?.contentWindow) return;
@@ -198,7 +198,16 @@ const initVideoCarousels = () => {
   });
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+const initPage = () => {
   initDpiTool();
   initVideoCarousels();
-});
+};
+
+// Material for MkDocs pode trocar a página sem outro DOMContentLoaded.
+if (typeof document$ !== "undefined") {
+  document$.subscribe(initPage);
+} else if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initPage, { once: true });
+} else {
+  initPage();
+}

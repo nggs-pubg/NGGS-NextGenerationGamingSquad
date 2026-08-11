@@ -1,8 +1,8 @@
 <div class="nggs-hero">
   <div class="nggs-hero__overlay"></div>
   <div class="nggs-hero__content">
-    <p class="nggs-hero__eyebrow">NGGS PLAY HUB</p>
-    <h1>Jogue leve, com setup afinado.</h1>
+    <p class="nggs-hero__eyebrow"><span aria-hidden="true"></span> NGGS PLAY HUB</p>
+    <h1>Performance real.<br /><span>Gameplay sem limites.</span></h1>
     <p>
       Somos um squad de jogadores casuais que ama compartilhar ajustes simples para deixar o seu PC estável e o jogo mais divertido.
       Venha otimizar Windows, GPU e sensibilidade com orientações descomplicadas e sem papo de tryhard.
@@ -11,6 +11,11 @@
       <a class="md-button md-button--primary" href="comunidade/discord/">Entrar na comunidade</a>
       <a class="md-button md-button--ghost" href="#mapa-de-conteudo">Mapa de conteúdo</a>
     </div>
+    <dl class="nggs-hero__stats" aria-label="Destaques da NGGS">
+      <div><dt>Foco</dt><dd>FPS estável</dd></div>
+      <div><dt>Método</dt><dd>100% reversível</dd></div>
+      <div><dt>Comunidade</dt><dd>Zero cheat</dd></div>
+    </dl>
   </div>
   <div class="nggs-hero__media" data-carousel>
     <div class="nggs-hero__media-header">
@@ -29,9 +34,12 @@
         <div class="nggs-video-card__frame">
           <iframe
             data-video-iframe
-            src="https://www.youtube.com/embed/gA1raXafp3Y?enablejsapi=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube-nocookie.com/embed/gA1raXafp3Y?enablejsapi=1&mute=1&controls=1&rel=0&playsinline=1"
             title="Setup NGGS para FPS estável"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
+            allow="autoplay; encrypted-media; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
@@ -41,9 +49,12 @@
         <div class="nggs-video-card__frame">
           <iframe
             data-video-iframe
-            src="https://www.youtube.com/embed/6QaM18OVmlM?enablejsapi=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube-nocookie.com/embed/6QaM18OVmlM?enablejsapi=1&mute=1&controls=1&rel=0&playsinline=1"
             title="Mods NGGS e ajustes táticos"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
+            allow="autoplay; encrypted-media; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
@@ -53,9 +64,12 @@
         <div class="nggs-video-card__frame">
           <iframe
             data-video-iframe
-            src="https://www.youtube.com/embed/JtTVcViylV8?enablejsapi=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube-nocookie.com/embed/JtTVcViylV8?enablejsapi=1&mute=1&controls=1&rel=0&playsinline=1"
             title="Guias curados NGGS"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
+            allow="autoplay; encrypted-media; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
@@ -93,17 +107,17 @@
       <p>Fundamentos, testes rápidos e nossa calculadora de eDPI para sentir o mouse do seu jeito.</p>
       <a href="mouse/calculadora/" class="nggs-card__link">Calcular agora</a>
     </article>
-    <article class="nggs-card">
+    <article class="nggs-card nggs-card--pubg">
       <img src="assets/images/logo-5.png" alt="NGGS tactical emblem" />
       <h3>PUBG playbook</h3>
       <p>Dicas de loot, anexos e ideias de rotação para brincar em equipe sem virar treino profissional.</p>
       <a href="pubg/guia-geral/" class="nggs-card__link">Montar estratégia</a>
     </article>
-    <article class="nggs-card">
-      <img src="assets/images/logo-3.png" alt="Marca NGGS em neon" />
-      <h3>Concord</h3>
-      <p>O novo espaço da comunidade para entrar com Google, criar salas e conversar em tempo real.</p>
-      <a href="concord/" class="nggs-card__link">Abrir Concord</a>
+    <article class="nggs-card nggs-card--arc">
+      <img src="assets/images/logo-3.png" alt="Emblema NGGS para a seção ARC Raiders" />
+      <h3>ARC Raiders</h3>
+      <p>Prepare o loadout, leia as ameaças da superfície e extraia com decisões mais inteligentes.</p>
+      <a href="arc-raiders/guia-geral/" class="nggs-card__link">Ir para Speranza</a>
     </article>
   </div>
 </section>

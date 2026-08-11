@@ -28,3 +28,14 @@ def test_create_weapon_page_generates_file(tmp_path: Path) -> None:
 def test_create_weapon_page_invalid_name(tmp_path: Path) -> None:
     with pytest.raises(ValueError):
         create_weapon_page(nome="   ", tipo="AR", saida=tmp_path)
+
+
+def test_create_weapon_page_escapes_html(tmp_path: Path) -> None:
+    destino = create_weapon_page(
+        nome="Vector",
+        tipo="<script>alert(1)</script>",
+        saida=tmp_path,
+    )
+    content = destino.read_text(encoding="utf-8")
+    assert "<script>" not in content
+    assert "&lt;script&gt;" in content

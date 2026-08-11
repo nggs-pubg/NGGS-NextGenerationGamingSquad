@@ -18,10 +18,4 @@ Somos uma equipe de amigos e jogadores FPS, survival e battle royale que ama tra
 - Junte-se ao Discord para tirar dúvidas, compartilhar clipes e organizar squads casuais.
 - Acompanhe nossos drops de conteúdo em vídeo no carrossel da página inicial para ver as novidades em ação.
 
-## Concord
-
-O Concord foi integrado como subprojeto em `apps/concord/`. Ele é a área logada da comunidade NGGS: login com Google via Firebase, salas, chat em tempo real e base para chamadas WebRTC.
-
-O site NGGS continua público. O login só é necessário quando a pessoa entra no Concord.
-
 Pronto para jogar leve, com FPS estável e companhia bacana? Chega mais e bora otimizar sem perder o bom humor. GG! 🎮

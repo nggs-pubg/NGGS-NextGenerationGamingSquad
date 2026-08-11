@@ -3,12 +3,23 @@
 from __future__ import annotations
 
 import re
+from html import escape
 from pathlib import Path
 from typing import Any
 
 from scripts.utils.files import load_template, write_markdown
 
 _INVALID_CHARS_RE = re.compile(r"[^a-z0-9\-.]+")
+
+
+def _safe_text(value: str | None) -> str | None:
+    """Neutralizar HTML e controles em conteúdo que será publicado."""
+    if value is None:
+        return None
+    cleaned = "".join(
+        character for character in value.strip() if character >= " " or character == "\t"
+    )
+    return escape(cleaned, quote=True)
 
 
 def slugify(nome: str) -> str:
@@ -40,17 +51,17 @@ def create_weapon_page(
 ) -> Path:
     """Gerar página de arma a partir do template oficial."""
     data: dict[str, Any] = {
-        "nome": nome,
-        "tipo": tipo,
-        "funcao": funcao,
-        "cano": cano,
-        "empunhadura": empunhadura,
-        "municao": municao,
-        "otica": otica,
-        "descricao": descricao,
-        "motivo": motivo,
-        "reverter": reverter,
-        "impacto": impacto,
+        "nome": _safe_text(nome),
+        "tipo": _safe_text(tipo),
+        "funcao": _safe_text(funcao),
+        "cano": _safe_text(cano),
+        "empunhadura": _safe_text(empunhadura),
+        "municao": _safe_text(municao),
+        "otica": _safe_text(otica),
+        "descricao": _safe_text(descricao),
+        "motivo": _safe_text(motivo),
+        "reverter": _safe_text(reverter),
+        "impacto": _safe_text(impacto),
     }
     template = load_template("arma_template.md.j2")
     content = template.render(**data)
