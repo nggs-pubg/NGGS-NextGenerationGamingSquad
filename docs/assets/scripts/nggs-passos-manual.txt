@@ -1,30 +1,10 @@
-NGGS - Execução manual dos comandos CMD
-=======================================
+NGGS - Passos manuais conservadores
+===================================
 
-1. Abra o Prompt de Comando **como Administrador**.
-2. Execute cada comando na ordem abaixo. Aguarde a finalização antes do próximo passo.
+Execute somente a etapa relacionada ao problema observado.
 
-Limpeza de temporários
-----------------------
-```
-del /q /f /s "%TEMP%\*"
-del /q /f /s "C:\Windows\Temp\*"
-```
+1. Cache DNS desatualizado: ipconfig /flushdns
+2. Consulte o plano ativo: powercfg /getactivescheme
+3. Troque o plano de energia pelas Configurações do Windows, anotando o plano anterior.
 
-Otimização de rede
-------------------
-```
-ipconfig /flushdns
-ipconfig /release
-ipconfig /renew
-netsh int ip reset
-netsh winsock reset
-```
-
-Plano de energia
-----------------
-```
-powercfg /setactive SCHEME_MIN
-```
-
-> Reinicie o computador após a execução de todos os comandos.
+Não recomendamos apagar temporários em massa, redefinir Winsock/TCP-IP ou alterar o boot e o Registro para obter FPS.
