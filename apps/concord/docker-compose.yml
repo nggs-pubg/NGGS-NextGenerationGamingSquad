@@ -1,0 +1,31 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-opentalk}
+      POSTGRES_USER: ${POSTGRES_USER:-opentalk}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck: {test: ["CMD-SHELL", "pg_isready -U opentalk -d opentalk"], interval: 5s, timeout: 5s, retries: 10}
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgresql+asyncpg://opentalk:change-me@postgres:5432/opentalk}
+      JWT_SECRET: ${JWT_SECRET:-dev-secret-change-me}
+      JWT_ALGORITHM: ${JWT_ALGORITHM:-HS256}
+      JWT_EXPIRE_MINUTES: ${JWT_EXPIRE_MINUTES:-60}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost}
+      STUN_SERVER: ${STUN_SERVER:-stun:stun.l.google.com:19302}
+      FIREBASE_SERVICE_ACCOUNT_JSON: ${FIREBASE_SERVICE_ACCOUNT_JSON:-}
+      FIREBASE_SERVICE_ACCOUNT_JSON_CONTENT: ${FIREBASE_SERVICE_ACCOUNT_JSON_CONTENT:-}
+    depends_on: {postgres: {condition: service_healthy}}
+  frontend:
+    build: ./frontend
+    depends_on: [backend]
+  nginx:
+    image: nginx:1.27-alpine
+    ports: ["80:80"]
+    volumes: ["./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro"]
+    depends_on: [frontend, backend]
+volumes:
+  postgres_data:

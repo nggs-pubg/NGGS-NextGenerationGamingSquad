@@ -37,6 +37,9 @@ nav:
   - Início: index.md
   - Comunidade:
       - Discord: comunidade/discord.md
+  - Concord:
+      - Visao Geral: concord/index.md
+      - Como Publicar: concord/publicacao.md
   - Configurar PC:
       - Checklist: pc/checklist.md
       - Windows: pc/windows.md

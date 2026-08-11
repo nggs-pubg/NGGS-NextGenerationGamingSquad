@@ -99,6 +99,12 @@
       <p>Dicas de loot, anexos e ideias de rotação para brincar em equipe sem virar treino profissional.</p>
       <a href="pubg/guia-geral/" class="nggs-card__link">Montar estratégia</a>
     </article>
+    <article class="nggs-card">
+      <img src="assets/images/logo-3.png" alt="Marca NGGS em neon" />
+      <h3>Concord</h3>
+      <p>O novo espaço da comunidade para entrar com Google, criar salas e conversar em tempo real.</p>
+      <a href="concord/" class="nggs-card__link">Abrir Concord</a>
+    </article>
   </div>
 </section>
 
