@@ -138,6 +138,8 @@ const initVideoCarousels = () => {
 
     const prevBtn = carousel.querySelector("[data-carousel-prev]");
     const nextBtn = carousel.querySelector("[data-carousel-next]");
+    const status = carousel.querySelector("[data-carousel-status]");
+    const progress = carousel.querySelector("[data-carousel-progress]");
 
     let step = 0;
 
@@ -153,6 +155,9 @@ const initVideoCarousels = () => {
 
     const updateControls = () => {
       const maxScroll = Math.max(viewport.scrollWidth - viewport.clientWidth, 0);
+      const currentIndex = step
+        ? Math.min(Math.round(viewport.scrollLeft / step), slides.length - 1)
+        : 0;
 
       if (prevBtn) {
         prevBtn.disabled = viewport.scrollLeft <= 0;
@@ -160,6 +165,15 @@ const initVideoCarousels = () => {
 
       if (nextBtn) {
         nextBtn.disabled = maxScroll === 0 || viewport.scrollLeft >= maxScroll - 1;
+      }
+
+      if (status) {
+        status.textContent = `${String(currentIndex + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+      }
+
+      if (progress) {
+        const ratio = maxScroll ? viewport.scrollLeft / maxScroll : 1;
+        progress.style.transform = `scaleX(${Math.max(0, Math.min(ratio, 1))})`;
       }
     };
 
@@ -181,6 +195,12 @@ const initVideoCarousels = () => {
 
     nextBtn?.addEventListener("click", () => {
       scrollByStep(1);
+    });
+
+    viewport.addEventListener("keydown", (event) => {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      event.preventDefault();
+      scrollByStep(event.key === "ArrowRight" ? 1 : -1);
     });
 
     const handleScroll = () => window.requestAnimationFrame(updateControls);
