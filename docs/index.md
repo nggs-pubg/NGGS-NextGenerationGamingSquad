@@ -17,9 +17,20 @@
       <div><dt>Comunidade</dt><dd>Zero cheat</dd></div>
     </dl>
   </div>
-  <div class="nggs-hero__media" data-carousel>
-    <div class="nggs-hero__media-header">
+  <div class="nggs-hero__badge">
+    <img src="assets/images/logo-3.png" alt="Marca NGGS em neon" />
+  </div>
+</div>
+
+<section class="nggs-video-showcase" aria-labelledby="nggs-videos-title" data-carousel>
+  <header class="nggs-video-showcase__header">
+    <div>
       <span class="nggs-section__eyebrow">NGGS em ação</span>
+      <h2 id="nggs-videos-title">Assista. Ajuste. Jogue melhor.</h2>
+      <p>Conteúdo direto ao ponto, separado em episódios para você assistir no seu ritmo.</p>
+    </div>
+    <div class="nggs-video-showcase__navigation">
+      <span class="nggs-carousel__status" data-carousel-status aria-live="polite">01 / 03</span>
       <div class="nggs-carousel__controls">
         <button type="button" class="nggs-carousel__control" data-carousel-prev aria-label="Vídeo anterior">
           <span aria-hidden="true">‹</span>
@@ -29,7 +40,8 @@
         </button>
       </div>
     </div>
-    <div class="nggs-carousel__viewport" data-carousel-viewport>
+  </header>
+  <div class="nggs-carousel__viewport" data-carousel-viewport tabindex="0" aria-label="Vídeos da NGGS">
       <article class="nggs-carousel__slide" data-carousel-slide data-video-card data-video-id="gA1raXafp3Y">
         <div class="nggs-video-card__frame">
           <iframe
@@ -75,12 +87,11 @@
         </div>
         <p>Rotinas leves para curtir PUBG entre amigos com performance estável e zero estresse.</p>
       </article>
-    </div>
   </div>
-  <div class="nggs-hero__badge">
-    <img src="assets/images/logo-3.png" alt="Marca NGGS em neon" />
+  <div class="nggs-carousel__progress" aria-hidden="true">
+    <span data-carousel-progress></span>
   </div>
-</div>
+</section>
 
 <section class="nggs-section" id="mapa-de-conteudo">
   <header class="nggs-section__header">
